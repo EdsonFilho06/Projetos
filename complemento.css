@@ -1,0 +1,14 @@
+body{
+    background-color: gray;
+}
+div{
+    background-color: white;
+    width: 50%;
+    left: 50%;
+    right: 50%;
+    margin-left: 25%;
+    padding: 3%;   
+}
+p{
+    text-align: center;
+}
