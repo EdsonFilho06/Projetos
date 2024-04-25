@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ValiForm</title>
+        <script src=ValiForm.js></script>
+    </head>
+    <body>
+        <form id="formurio" onsubmit="return validateForm()">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <span id="nomeError" class="error"></span><br>
+          
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span id="emailError" class="error"></span><br>
+          
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade"><br>
+            <span id="idade" class="error"></span><br>
+          
+            <input type="submit" value="Enviar">
+          </form>          
+    </body>
+</html>

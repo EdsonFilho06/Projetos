@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Cliques</title>
+</head>
+<body>
+
+  <h1>Contador de Cliques</h1>
+
+  <div id="content">
+    <button id="botao">Clique Aqui</button>
+  </div>
+  <style>
+    body{
+      
+    }
+  </style>
+  <p id="resultado">O botão foi clicado <span id="contador">0</span> vezes.</p>
+
+  <script>
+    // Obtém o botão e o elemento de resultado
+    var botao = document.getElementById('botao');
+    var resultado = document.getElementById('resultado');
+    
+    // Inicializa o contador
+    var contador = 0;
+    
+    // Adiciona um ouvinte de eventos de clique ao botão
+    botao.addEventListener('click', function() {
+      // Incrementa o contador
+      contador++;
+      
+      // Atualiza o texto do elemento de resultado
+      resultado.innerHTML = 'O botão foi clicado <span id="contador">' + contador + '</span> vezes.';
+    });
+  </script>
+
+</body>
+</html>
